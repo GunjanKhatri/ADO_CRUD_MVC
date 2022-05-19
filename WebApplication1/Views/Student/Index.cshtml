@@ -1,0 +1,28 @@
+﻿@model List<ADOCRUD_MVC.Models.StudentModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<table class="table table-hover">
+    <tr>
+        <th>Student Id</th>
+        <th>Name</th>
+        <th>City</th>
+        <th>Address</th>
+        <th>Email Id</th>
+        
+
+    </tr>
+    @foreach (var data in Model)
+    {
+        <tr>
+            <td>@data.StudId</td>
+            <td>@data.Name</td>
+            <td>@data.City</td>
+            <td>@data.Address</td>
+            <td>@data.EmailId</td>
+        </tr>
+    }
+
+</table>
+
